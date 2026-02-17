@@ -1,6 +1,6 @@
 body{
     background: linear-gradient(to right, #859468, #d3ddbe, #a6b785);  
-
+    background-attachment: fixed;
     /* background: linear-gradient(to right, #8a8256, #e1dcaa, #9a9471);   */
 } 
 .main{
@@ -150,6 +150,7 @@ ul li span:hover{
     width: 90%;
     max-width: 500px;
 }
+
 
 
 
