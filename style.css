@@ -1,0 +1,154 @@
+body{
+    background: linear-gradient(to right, #859468, #d3ddbe, #a6b785); 
+
+    /* background: linear-gradient(to right, #8a8256, #e1dcaa, #9a9471);  */
+} 
+.main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height:100vh;
+    padding:20px ;
+    position: relative;
+}
+h1{
+    padding-top: 20px;
+}
+
+.box{
+    background-color:#839958;
+    width:90%;
+    min-width: 500px;
+    min-height: 500px;
+    height:auto;
+    border-radius: 12px;
+    background: linear-gradient(to right, #3c4a20, #556339, #89a159);
+    position:relative;
+    z-index: 1;             
+    max-width: 500px;
+}
+.one{
+    color:#FEDC7B;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 3px 8px rgb(207, 159, 78);
+}
+#input-box{
+    margin-left: 0;
+    height: 7vh;
+    width: 50%;
+    border:none;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;   
+    background-color: #EEE9BF;
+}
+#input-box::placeholder{
+    color: #496026;
+    font-size: 20px;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    font-size:30px;
+    user-select: none;
+    cursor:pointer;
+    padding: 12px 40px 12px 40px;
+    position: relative;
+    width: 80%;
+    margin-left: 0;
+    color: #FEDC7B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    transition: color 0.2s ease; 
+}
+#list-container{
+    width: 100%;
+    padding: 0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height:28px;
+    width:28px;
+    border-radius: 50%;
+    background-image: url(./pen-svgrepo-com.svg);
+    background-size: contain;
+    background-position: center;
+    top: 12px;
+    left:6px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    text-decoration-color: white;
+}
+ul li span{
+    position: absolute;
+    right: 6px;
+    top:5px;
+    color:#ffffff;
+    height:40px;
+    width: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+ul li span:hover{
+     background-color: #FEDC7B;
+
+}
+.smallbox{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-bottom: 20px;
+}
+.input-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;              
+    margin-bottom: 16px;
+}
+.totoro-left{
+    position: absolute;
+    width: 150px;
+    height: 240px;
+    object-fit: contain;
+    top: -80px;
+    left: 0px;
+    z-index: 0;      
+}
+.totoro-right {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    bottom: -110px;
+    right: 4px;
+    z-index: 0;       
+    mix-blend-mode: screen;
+    transform: scaLey(-1);
+}
+.box-wrapper {
+    position: relative;  
+    width: 90%;
+    max-width: 500px;
+}
+
+
